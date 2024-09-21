@@ -1,0 +1,31 @@
+
+Software requirements : PyCharm/VSCode
+
+Commands to run Project
+step1: Create a Virtual environment (If we are using Command prompt to run Project it will require)
+		* python -m venv virtual_environment_name
+		* virtual_environment_name\scripts\activate
+		* cd virtual_environment_name
+	(If we are using PyCharm we can select Virtual Environment directly and start project)
+
+Step2: Install requirements
+		* pip install django
+		* pip install mysqlclient
+		* pip install pillow (if we are creating image-based content)
+		* pip freeze
+
+Step3: Start your Project
+		* django-admin startproject ProjectName
+		* cd ProjectName
+
+step4: Start your Application
+		* django-admin startapp ApplicationName
+
+step5: Make migrations and run your server
+		* python manage.py makemigrations
+		* python manage.py migrate
+		* python manage.py runserver
+Step6: Create Super user to access admin page 
+		* python manage.py createsuperuser   
+
+Note: Add Template directory to create Frontend user-interface to project  by saving files in .html extension
